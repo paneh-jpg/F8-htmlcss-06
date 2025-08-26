@@ -283,3 +283,28 @@ a {
 .hero__decor-img-02 {
   right: 0;
 }
+
+/* Clients  */
+.clients {
+  margin-top: 100px;
+}
+
+.clients__title {
+  position: relative;
+  color: #080415;
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: -1.68px;
+}
+
+.clients__title::before {
+  position: absolute;
+  top: 22px;
+  left: -99px;
+  display: inline-block;
+  content: "";
+  width: 86px;
+  height: 2px;
+  background-color: #5d3bee;
+}
