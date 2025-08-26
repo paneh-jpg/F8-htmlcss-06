@@ -26,6 +26,25 @@ body {
 }
 
 /* Common */
+.section-heading {
+  color: #080415;
+
+  text-align: center;
+  font-size: 5.6rem;
+  font-weight: 500;
+  line-height: 1.1785;
+  letter-spacing: -2.24px;
+}
+
+.section-desc {
+  margin-top: 20px;
+  color: #51586a;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+}
+
 a {
   text-decoration: none;
 }
@@ -169,7 +188,8 @@ a {
   font-weight: 700;
 }
 
-.hero__link::after {
+.hero__link::after,
+.project__item-cta::after {
   content: "";
   position: absolute;
   left: 0;
@@ -182,7 +202,8 @@ a {
   transition: transform 400ms ease;
 }
 
-.hero__link:hover::after {
+.hero__link:hover::after,
+.project__item-cta:hover::after {
   transform: scaleX(1);
 }
 
@@ -307,4 +328,227 @@ a {
   width: 86px;
   height: 2px;
   background-color: #5d3bee;
+}
+
+.client__list {
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 68px 1fr 66px 1fr 36px 1fr;
+
+  align-items: center;
+  row-gap: 36px;
+}
+
+.client__item1 {
+  grid-column: 1;
+}
+.client__item2 {
+  grid-column: 3;
+}
+.client__item3 {
+  grid-column: 5;
+}
+.client__item4 {
+  grid-column: 7;
+}
+
+.client__item5 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.client__item6 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.client__item7 {
+  grid-column: 5;
+  grid-row: 2;
+}
+.client__item8 {
+  grid-column: 7;
+  grid-row: 2;
+}
+
+/* Specialities */
+.special {
+  margin-top: 140px;
+}
+
+.special__list {
+  margin-top: 60px;
+}
+
+.special-item__box {
+  background: #fbfaff;
+  padding: 33px 25px 32px 43px;
+  height: 100%;
+}
+
+.special-item__title {
+  display: inline-block;
+  margin-top: 22px;
+  color: #080415;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -1.28px;
+}
+
+.special-item__desc {
+  margin-top: 15px;
+  color: #51586a;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+}
+
+/* My Projects  */
+.project {
+  margin-top: 140px;
+  padding: 86px 0;
+  background-color: #5d3bee;
+}
+
+.project__info {
+  display: flex;
+  align-items: center;
+}
+
+.project__heading,
+.project__desc {
+  text-align: left;
+  color: #fff;
+}
+
+.project__list {
+  margin-top: 70px;
+}
+
+.project__list2 {
+  margin-top: 30px;
+}
+
+.project__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fbfaff;
+  padding: 24px 23px 23px 34px;
+}
+
+.project__item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project__img {
+  position: relative;
+  z-index: 2;
+  width: 246px;
+  height: 187px;
+  object-fit: cover;
+}
+
+.project__title {
+  display: inline-block;
+  margin-top: 20px;
+  color: #080415;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -1.28px;
+}
+
+.project__item-desc {
+  margin-top: 10px;
+  color: #51586a;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.44;
+}
+
+.project__item-cta {
+  position: relative;
+  display: inline-block;
+  padding: 10px 0;
+  margin-top: 20px;
+  color: #080415;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.project__cta {
+  margin-top: 96px;
+  background-color: #fff;
+  color: #080415;
+}
+
+.project__cta:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -30px 16px -18px inset;
+}
+
+.project__decor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* About  */
+.about {
+  margin-top: 140px;
+}
+
+.about__hello {
+  text-align: center;
+  color: #5d3bee;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -1.28px;
+}
+
+.about__hello::after {
+  display: inline-block;
+  content: url(../icon/hello-icon.svg);
+  vertical-align: middle;
+  padding-left: 9px;
+}
+
+.about__heading {
+  margin-top: 10px;
+}
+
+.stats__list {
+  margin-top: 70px;
+  padding: 20px 0;
+}
+
+.stats__number {
+  position: relative;
+  display: inline-block;
+  color: #080415;
+  font-size: 5.6rem;
+  font-weight: 500;
+  letter-spacing: 1.68px;
+  padding-bottom: 1px;
+}
+
+.stats__number::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 1.5px;
+  height: 3px;
+  background-color: #080415;
+}
+
+.stats__label {
+  color: #51586a;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
 }
