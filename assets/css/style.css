@@ -38,7 +38,7 @@ body {
   font-size: 5.6rem;
   font-weight: 500;
   line-height: 1.1785;
-  letter-spacing: -2.24px;
+  /* letter-spacing: -2.24px; */
 }
 
 .section-desc {
@@ -177,13 +177,15 @@ a {
   margin-top: 137px;
   color: #080415;
   font-size: 8rem;
+  font-style: normal;
   font-weight: 500;
   line-height: 0.95;
-  letter-spacing: -3.2px;
+  letter-spacing: -1.1px;
 }
 
 .hero__desc {
-  margin-top: 20px;
+  width: 80%;
+  margin-top: 22px;
   color: #51586a;
   font-size: 1.8rem;
   font-weight: 400;
@@ -316,7 +318,7 @@ a {
 }
 
 .hero__decor-img-01 {
-  left: 0;
+  left: -25px;
 }
 
 .hero__decor-img-02 {
@@ -328,13 +330,17 @@ a {
   margin-top: 100px;
 }
 
+.client__wrap {
+  padding-left: 5px;
+}
+
 .clients__title {
   position: relative;
+  margin-top: 11px;
   color: #080415;
   font-size: 4.2rem;
   font-weight: 500;
   line-height: 1.19;
-  letter-spacing: -1.68px;
 }
 
 .clients__title::before {
@@ -430,12 +436,18 @@ a {
 .project__info {
   display: flex;
   align-items: center;
+  gap: 28px;
 }
 
 .project__heading,
 .project__desc {
   text-align: left;
   color: #fff;
+}
+
+.project__desc {
+  font-weight: 300;
+  color: #ffffffb3;
 }
 
 .project__list {
@@ -498,7 +510,7 @@ a {
 }
 
 .project__cta {
-  margin-top: 96px;
+  margin-top: 80px;
   background-color: #fff;
   color: #080415;
 }
@@ -510,7 +522,7 @@ a {
 .project__decor {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -10px;
 }
 
 /* About  */
@@ -780,6 +792,10 @@ a {
   align-items: center;
 }
 
+.question__item.active .question__item {
+  border-bottom: #5d3bee;
+}
+
 .question__info {
   padding-left: 22px;
 }
@@ -791,6 +807,7 @@ a {
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: -1.28px;
+  margin-bottom: -15px;
 }
 
 .question__item.active .question__title {
@@ -819,7 +836,7 @@ a {
   background-color: #fff;
   outline: none;
   border: 2px solid #161a1c33;
-  margin-bottom: -35px;
+  margin-bottom: -20px;
   transition: transform 0.3s ease;
 }
 
@@ -839,6 +856,10 @@ a {
   position: absolute;
   top: 15px;
   left: 16px;
+}
+
+.question__item.active {
+  border-bottom: 2px solid #5d3bee;
 }
 
 /* Atmosphere */
@@ -952,7 +973,7 @@ a {
 }
 
 .footer__bottom {
-  margin-top: 32px;
+  margin-top: 50px;
   padding-top: 18px;
   padding-left: 129px;
   padding-right: 147px;
@@ -983,6 +1004,11 @@ a {
 .fbr-1,
 .fbr-2 {
   letter-spacing: -0.54px;
+}
+
+.fbr-1:hover,
+.fbr-2:hover {
+  text-decoration: underline;
 }
 
 .fbr-2 {
