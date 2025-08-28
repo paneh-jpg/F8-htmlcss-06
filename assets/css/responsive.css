@@ -1009,9 +1009,10 @@
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 370px) {
   .client__list {
-    gap: 30px !important;
+    gap: 30px;
+    margin-left: 14px;
   }
 
   .cta {
