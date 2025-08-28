@@ -670,7 +670,8 @@
     display: block;
   }
 
-  .hide-on-pc {
+  .special .hide-on-pc,
+  .video .hide-on-pc {
     display: none;
   }
 
@@ -759,15 +760,18 @@
 
   .video__bg.hide-on-mobile {
     display: block;
+    width: 30.33%;
   }
 
   .atmosphere-mobile-list {
-    display: block;
     display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 
   .atmosphere-img {
-    width: 100%;
+    width: 33.33%;
+    margin-right: 0;
   }
 
   .footer .navbar {
@@ -890,12 +894,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .header .toggle-menu,
-  .menu-drawer,
-  .hide-on-pc {
-    display: block;
-  }
-
   .header .toggle-menu {
     display: flex;
     justify-content: center;
