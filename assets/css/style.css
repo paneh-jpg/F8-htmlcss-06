@@ -82,11 +82,15 @@ a {
   padding-top: 40px;
   padding-bottom: 10px;
   top: -22px;
-  z-index: 999;
+  z-index: 5;
 }
 
 .space-height {
   scroll-margin-top: 90px;
+}
+
+.space-height2 {
+  scroll-margin-top: 120px;
 }
 
 .header {
@@ -140,7 +144,8 @@ a {
   align-items: center;
 }
 
-.contact-icon__wrap {
+.contact-icon__wrap,
+.toggle-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -479,6 +484,12 @@ a {
   width: 246px;
   height: 187px;
   object-fit: cover;
+  transition: box-shadow 400ms;
+}
+
+.project__img:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .project__title {
@@ -830,6 +841,7 @@ a {
 .question__view-btn {
   cursor: pointer;
   position: relative;
+  flex-shrink: 0;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -979,6 +991,17 @@ a {
   padding-right: 147px;
   margin-bottom: 30px;
   border-top: 1px solid #0c072033;
+}
+
+.footer__logo-pc {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
 }
 
 .footer__bottom,
