@@ -1,5 +1,5 @@
 /* PC  */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1003px) {
   .toggle-menu,
   .menu-drawer,
   .mobile-header__logo,
@@ -845,5 +845,55 @@
   .f-bl {
     padding-top: 20px;
     padding-bottom: 29px;
+  }
+}
+
+/* PC đặc biệt ~1003px */
+@media screen and (min-width: 1000px) and (max-width: 1192px) {
+  .client__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toggle-menu,
+  .menu-drawer,
+  .mobile-header__logo,
+  .hide-on-pc {
+    display: none;
+  }
+
+  .client__inner .col-lg-3 {
+    --column-number: 4;
+    --offset-number: 3;
+  }
+
+  .clients__title {
+    text-align: center;
+  }
+
+  .client__wrap {
+    padding: 0 10px;
+  }
+
+  .clients__title::before {
+    top: -10px;
+    left: 99px;
+  }
+
+  .client__list {
+    margin-top: 50px;
+  }
+
+  .project__item {
+    height: 284px;
+  }
+}
+
+@media screen and (min-width: 1193px) {
+  .toggle-menu,
+  .menu-drawer,
+  .mobile-header__logo,
+  .hide-on-pc {
+    display: none;
   }
 }
