@@ -1008,3 +1008,17 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 375px) {
+  .client__list {
+    gap: 30px !important;
+  }
+
+  .cta {
+    overflow: hidden;
+  }
+
+  .footer .navbar-link {
+    padding: 10px 13px;
+  }
+}
