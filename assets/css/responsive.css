@@ -760,7 +760,7 @@
 
   .video__bg.hide-on-mobile {
     display: block;
-    width: 30.33%;
+    width: 100%;
   }
 
   .atmosphere-mobile-list {
