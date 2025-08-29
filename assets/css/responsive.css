@@ -1009,7 +1009,7 @@
   }
 }
 
-@media screen and (min-width: 374px) and (max-width: 377px) {
+@media screen and (min-width: 300px) and (max-width: 377px) {
   .client__list {
     gap: 30px;
     margin-left: 14px;
