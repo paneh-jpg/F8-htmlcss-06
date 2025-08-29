@@ -1009,7 +1009,7 @@
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 370px) {
+@media screen and (min-width: 374px) and (max-width: 377px) {
   .client__list {
     gap: 30px;
     margin-left: 14px;
@@ -1021,5 +1021,8 @@
 
   .footer .navbar-link {
     padding: 10px 13px;
+  }
+  .stats__inner {
+    padding: 0;
   }
 }
