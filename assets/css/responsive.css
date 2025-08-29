@@ -1015,6 +1015,14 @@
     margin-left: 14px;
   }
 
+  .client__item {
+    width: 70%;
+  }
+
+  .project__img {
+    display: none;
+  }
+
   .cta {
     overflow: hidden;
   }
